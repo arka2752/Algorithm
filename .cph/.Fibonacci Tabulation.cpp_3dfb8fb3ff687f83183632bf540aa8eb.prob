@@ -1,0 +1,1 @@
+{"name":"Local: Fibonacci Tabulation","url":"e:\\Algorithm\\Fibonacci Tabulation.cpp","tests":[{"id":1696070685045,"input":"30","output":""},{"id":1696070691700,"input":"100","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\Fibonacci Tabulation.cpp","group":"local","local":true}
