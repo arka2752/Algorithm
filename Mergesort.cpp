@@ -25,7 +25,7 @@ void merge(int ar[], int l, int mid, int r, int n)
         }
     }
     while (left <= mid)
-    {
+    { 
         temp[k] = ar[left];
         left++;
         k++;
