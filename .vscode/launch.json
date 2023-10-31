@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "e:/Algorithm",
-      "program": "e:/Algorithm/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "/media/arka_2752/Happy Coding/Algorithm",
+      "program": "/media/arka_2752/Happy Coding/Algorithm/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
