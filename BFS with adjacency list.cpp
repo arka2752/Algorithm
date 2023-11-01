@@ -27,7 +27,7 @@ Output
 #include<bits/stdc++.h>
 using namespace std;
 int n, e;
-int visit[1001];
+int visited[1001];
 vector<int>graph[1001];
 void bfs(int start)
 {
@@ -36,7 +36,7 @@ void bfs(int start)
     // Add on answer
     // push on queue
 
-    visit[start] = 1;
+    visited[start] = 1;
     cout << start << " ";
     queue<int> Q;
     Q.push(start);
@@ -49,9 +49,9 @@ void bfs(int start)
         {
             int node= graph[x][j];
 
-            if (visit[node] == 0)
+            if (visited[node] == 0)
             {
-                visit[node] = 1;
+                visited[node] = 1;
                 cout << node << " ";
                 Q.push(node);
             }
