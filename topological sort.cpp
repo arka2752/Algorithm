@@ -27,17 +27,17 @@ Output
 #include <bits/stdc++.h>
 using namespace std;
 int n, e;
-int visit[1001];
+int visited[1001];
 vector<int> graph[1001];
 vector<int> ans;
 void dfs(int start)
 {
-    visit[start] = 1;
+    visited[start] = 1;
     cout << start << " ";
     for (int j = 0; j < graph[start].size(); j++)
     {
         int node = graph[start][j];
-        if (visit[node] == 0)
+        if (visited[node] == 0)
         {
             dfs(node);
         }
@@ -48,7 +48,7 @@ void topological_sort()
 {
     for (int i = 1; i <= n; i++)
     {
-        if (visit[i] == 0)
+        if (visited[i] == 0)
         {
             dfs(i);
         }

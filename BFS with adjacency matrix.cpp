@@ -28,7 +28,7 @@ Output
 #include <bits/stdc++.h>
 using namespace std;
 int n, e;
-int visit[1001];
+int visited[1001];
 int graph[1001][1001];
 void bfs(int start)
 {
@@ -37,7 +37,7 @@ void bfs(int start)
     // Add on answer
     // push on queue
 
-    visit[start] = 1;
+    visited[start] = 1;
     cout << start << " ";
     queue<int> Q;
     Q.push(start);
@@ -48,9 +48,9 @@ void bfs(int start)
         Q.pop();
         for (int j = 1; j <= n; j++)
         {
-            if (graph[x][j] != 0 && visit[j] == 0)
+            if (graph[x][j] != 0 && visited[j] == 0)
             {
-                visit[j] = 1;
+                visited[j] = 1;
                 cout << j << " ";
                 Q.push(j);
             }

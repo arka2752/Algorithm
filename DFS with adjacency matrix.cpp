@@ -28,17 +28,17 @@ Output
 #include <bits/stdc++.h>
 using namespace std;
 int n, e;
-int visit[1001];
+int visited[1001];
 int graph[1001][1001];
 
 void dfs(int start)
 {
     // visit then print then next node
-    visit[start] = 1;
+    visited[start] = 1;
     cout << start << " ";
     for (int j = 1; j <= n; j++)
     {
-        if (graph[start][j] != 0 && visit[j] == 0)
+        if (graph[start][j] != 0 && visited[j] == 0)
         {
             dfs(j);
         }
