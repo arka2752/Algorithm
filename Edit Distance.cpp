@@ -1,3 +1,25 @@
+/*
+Input
+---------
+ayced
+abcdef
+
+Output
+---------
+0 1 2 3 4 5 6
+1 0 1 2 3 4 5
+2 1 1 2 3 4 5
+3 2 2 1 2 3 4
+4 3 3 2 2 2 3
+5 4 4 3 2 3 3
+
+f is replaced by d
+d is deleted
+b is replaced by y
+
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -39,16 +61,16 @@ int main()
         }
         else{
             if(ED[i][j]==1+ED[i-1][j-1]){
-                cout<<s2[j-1]<<" is replaced by"<<s1[i-1]<<endl;
+                cout<<s2[j-1]<<" is replaced by "<<s1[i-1]<<endl;
                 i=i-1;
                 j=j-1;
             }
             else if(ED[i][j]==1+ED[i-1][j]){
-                cout<<s2[j-1]<<" is inserted"<<endl;
+                cout<<s2[j-1]<<" is inserted "<<endl;
                 i=i-1;
             }
             else{
-                cout<<s2[j-1]<<" is deleted"<<endl;
+                cout<<s2[j-1]<<" is deleted "<<endl;
                 j=j-1;
             }
         }
